@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <title>Simple Calendar</title>
+    </head>
+
+    <body>
+
+        <section id="myCalendar">
+            <div class="hbContainer">
+                <div class="calendarYearMonth center">
+                    <p class="left calBtn" onclick="prevMonth()"> Prev </p>
+                    <p id="yearMonth"> Jan 2021 </p>
+                    <p class="right calBtn" onclick="nextMonth()"> Next </p>
+                </div>
+                <div>
+                    <ol class="calendarList1">
+                        <li class="day-name">Sat</li>
+                        <li class="day-name">Sun</li>
+                        <li class="day-name">Mon</li>
+                        <li class="day-name">Tue</li>
+                        <li class="day-name">Wed</li>
+                        <li class="day-name">Thu</li>
+                        <li class="day-name">Fri</li>
+                    </ol>
+                    <ol class="calendarList2" id="calendarList">
+
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/calendar.js"></script>
+
+    </body>
+
+</html>
